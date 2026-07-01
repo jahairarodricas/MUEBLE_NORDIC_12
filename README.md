@@ -39,7 +39,7 @@ La página cubre las siguientes secciones del informe técnico:
 | `logo_esan.png` | Logo de la Universidad ESAN |
 | `icono.png` | Ícono de la pestaña del navegador |
 | `mueble portada.png` | Imagen de portada del hero |
-| `image1.png` – `image23.png` | Imágenes del informe técnico |
+| `image1.png` – `image23.png` (excepto image4) | Imágenes del informe técnico (flujograma, planos, fotos del proceso y mueble final) |
 
 ## Cómo visualizar
 
