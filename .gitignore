@@ -1,0 +1,10 @@
+# Documentos de trabajo (no forman parte de la página web)
+*.docx
+*.doc
+*.xlsx
+*.pdf
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
