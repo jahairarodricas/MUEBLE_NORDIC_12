@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>NÓRDIC 12 – Mesa de Noche</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="logo_esan.png" alt="ESAN" class="header-logo">
+            <span class="logo-text">NÓRDIC 12</span>
+        </div>
+        <nav>
+            <a href="#introduccion">Introducción</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#concepto">Diseño</a>
+            <a href="#fundamento">Fundamento</a>
+            <a href="#ingenieria">Ingeniería</a>
+            <a href="#fabricacion">Fabricación</a>
+            <a href="#conclusiones">Conclusiones</a>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">PROCESOS DE FABRICACIÓN — 2026-1</span>
+            <h1>VELADOR<br>NÓRDIC 12</h1>
+            <p class="hero-sub">Mesa de Noche Minimalista Multifuncional</p>
+            <div class="hero-chips">
+                <span class="chip">Ruteado CNC</span>
+                <span class="chip">MDF 12 mm</span>
+                <span class="chip">Diseño CAD</span>
+            </div>
+        </div>
+        <a href="#introduccion" class="scroll-down">
+            <span>Explorar</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+    </section>
+
+    <!-- CARATULA -->
+    <section class="caratula-section">
+        <div class="caratula-grid">
+            <div class="caratula-left">
+                <img src="logo_esan.png" alt="Universidad ESAN" class="caratula-logo">
+                <h2 class="caratula-uni">Universidad ESAN</h2>
+                <p class="caratula-carrera">Carrera de Ingeniería Industrial y Comercial</p>
+            </div>
+            <div class="caratula-divider"></div>
+            <div class="caratula-right">
+                <div class="info-row"><span class="info-label">Curso</span><span class="info-val">Procesos de Fabricación — 2026-1</span></div>
+                <div class="info-row"><span class="info-label">Docente</span><span class="info-val">Ciro Mejía</span></div>
+                <div class="info-row"><span class="info-label">Proyecto</span><span class="info-val">VELADOR NÓRDIC 12</span></div>
+                <div class="info-row team-row">
+                    <span class="info-label">Integrantes</span>
+                    <ul class="team-list">
+                        <li>Chambergo Saavedra, Alanis Chris</li>
+                        <li>Cubas Guevara, Aaron Aldeir</li>
+                        <li>Rodriguez Bejarano, Liam Denis</li>
+                        <li>Rodriguez Castañeda, Jahaira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- 1. INTRODUCCIÓN -->
+        <section id="introduccion" class="content-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>Introducción</h2>
+            </div>
+
+            <h3>1.1. Contexto y motivación del proyecto</h3>
+            <p>El crecimiento de viviendas con espacios reducidos exige mobiliario que combine funcionalidad y diseño. Frente a la mueblería tradicional, la fabricación mediante modelado CAD y ruteado CNC permite crear muebles multifuncionales con alta precisión y rapidez. Este proyecto consiste en el diseño y fabricación de un velador organizador en MDF de 12 mm, que ofrece soluciones de almacenamiento y un tocador integrado para optimizar ambientes pequeños.</p>
+
+            <h3>1.2. Alcance y limitaciones del prototipo</h3>
+            <p>El proyecto abarca desde el modelado CAD hasta el mecanizado CNC y ensamblaje de un prototipo funcional. Al tener fines académicos, se limita a la validación estructural y funcional de una sola unidad, excluyendo producción en serie, análisis de costos o recubrimientos finales de pintura.</p>
+        </section>
+
+        <!-- 2. OBJETIVOS -->
+        <section id="objetivos" class="content-section alt-bg">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Objetivos</h2>
+            </div>
+
+            <h3>2.1. Objetivo general</h3>
+            <p>Diseñar y fabricar mediante ruteado CNC un velador multifuncional en MDF de 12 mm, garantizando precisión dimensional y un correcto ensamblaje.</p>
+
+            <h3>2.2. Objetivos específicos</h3>
+            <ul>
+                <li>Modelar el velador en software CAD y generar las trayectorias de mecanizado CNC bajo criterios de manufacturabilidad y ergonomía.</li>
+                <li>Fabricar las piezas en MDF de 12 mm optimizando el material y realizar su acondicionamiento superficial (lijado).</li>
+                <li>Ensamblar el prototipo utilizando uniones a presión y herrajes complementarios (bisagras y jaladera).</li>
+                <li>Validar la estabilidad estructural, el correcto funcionamiento de los compartimientos y la calidad del acabado final.</li>
+            </ul>
+        </section>
+
+        <!-- 3. CONCEPTO DE DISEÑO -->
+        <section id="concepto" class="content-section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Concepto de Diseño</h2>
+            </div>
+
+            <h3>3.1. Nombre y descripción del mueble</h3>
+            <div class="nombre-mueble-box">
+                <h4>NÓRDIC 12</h4>
+                <p>Velador Multifuncional — Mesa de Noche Minimalista</p>
+            </div>
+            <p>Nordic 12 es un velador multifuncional de diseño minimalista fabricado en MDF, creado para optimizar el espacio en dormitorios modernos. Funciona como mesa de noche, organizador y tocador.</p>
+
+            <h3>3.2. Valor agregado</h3>
+            <p>Está compuesto por los siguientes elementos:</p>
+            <div class="cards-grid">
+                <div class="feature-card">
+                    <h5>Tapa superior con espejo plegable</h5>
+                    <p>Convierte el mueble en tocador e incluye un compartimiento interno para accesorios.</p>
+                </div>
+                <div class="feature-card">
+                    <h5>Cajón frontal</h5>
+                    <p>Espacio de almacenamiento cerrado que protege y organiza objetos personales.</p>
+                </div>
+                <div class="feature-card">
+                    <h5>Repisas abiertas</h5>
+                    <p>Compartimientos de rápido acceso para libros o elementos decorativos.</p>
+                </div>
+                <div class="feature-card">
+                    <h5>Sistema de ensamblaje</h5>
+                    <p>Combina uniones mecanizadas por ruteado CNC con herrajes para un montaje seguro y estético.</p>
+                </div>
+            </div>
+
+            <h3>3.3. Público objetivo</h3>
+            <p>El mueble está dirigido a estudiantes universitarios, jóvenes profesionales y personas que residen en espacios limitados, como habitaciones pequeñas o departamentos. Es la solución ideal para usuarios que valoran el diseño minimalista y necesitan optimizar su entorno mediante mobiliario altamente funcional.</p>
+
+            <h3>3.4. Uso funcional</h3>
+            <p>Diseñado para adaptarse a las necesidades diarias dentro del dormitorio, el Nórdic 12 centraliza múltiples usos:</p>
+            <ul>
+                <li><strong>Mesa de noche:</strong> Sirve como superficie de apoyo principal para lámparas, relojes, celulares o elementos decorativos.</li>
+                <li><strong>Tocador personal:</strong> Su espejo plegable permite que el usuario se arregle cómodamente sin requerir un mueble extra.</li>
+                <li><strong>Organizador integral:</strong> Dispone de áreas específicas para resguardar objetos personales, así como repisas para libros y dispositivos electrónicos, manteniéndolos siempre ordenados y accesibles.</li>
+            </ul>
+        </section>
+
+        <!-- 4. FUNDAMENTO TEÓRICO -->
+        <section id="fundamento" class="content-section alt-bg">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Fundamento Teórico</h2>
+            </div>
+
+            <h3>4.1. Fabricación aplicada al mobiliario</h3>
+            <p>El uso conjunto de modelado tridimensional (CAD) y mecanizado automatizado permite fabricar piezas complejas con mayor exactitud, mejor acabado superficial y en menor tiempo en comparación con la manufactura tradicional.</p>
+
+            <p class="img-label"><strong>Imagen 1 — Flujograma de proceso de fabricación</strong></p>
+            <img src="image3.png" alt="Flujograma de proceso de fabricación" loading="lazy">
+
+            <h3>4.2. Tecnología utilizada: Ruteado CNC</h3>
+            <p>El ruteado CNC (Control Numérico Computarizado) es un proceso de mecanizado automatizado en el cual una fresa rotativa, guiada por coordenadas generadas a partir del modelo CAD, corta el material siguiendo trayectorias programadas con precisión milimétrica. A diferencia de los métodos tradicionales de carpintería, esta tecnología permite obtener piezas planas con tolerancias controladas, encajes a presión exactos y un acabado uniforme, eliminando la variabilidad propia del corte manual.</p>
+            <p>Para la fabricación del Nórdic 12 se empleó una fresadora CNC tipo ShopBot del Fablab ESAN.</p>
+
+            <p class="img-label"><strong>Imagen 2 — Proceso de Ruteado CNC en el Fablab ESAN</strong></p>
+            <img src="image7.png" alt="Proceso de Ruteado CNC" loading="lazy">
+
+            <h3>4.3. Material base: MDF (12 mm)</h3>
+            <p>El MDF es un material compuesto de gran homogeneidad, ideal para manufactura automatizada porque no presenta nudos ni vetas naturales direccionales, evitando así astillamientos impredecibles durante el corte a altas revoluciones. Para el prototipo del velador se empleó un tablero MDF de 12 mm de espesor constante, el cual proporciona la rigidez y resistencia estructural necesaria para soportar cargas, permite un adecuado aprovechamiento de la materia prima en el nesting (distribución de corte) y ofrece una superficie sumamente lisa y óptima para el posterior lijado.</p>
+        </section>
+
+        <!-- 5. DISEÑO DE INGENIERÍA -->
+        <section id="ingenieria" class="content-section">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2>Diseño de Ingeniería</h2>
+            </div>
+
+            <h3>5.1. Dimensiones generales del mueble</h3>
+            <p>El diseño final ensamblado cuenta con las siguientes dimensiones totales para asegurar su formato compacto:</p>
+            <div class="dimensions-box">
+                <div class="dim-item"><span class="dim-val">80 cm</span><span class="dim-label">Ancho total (dos módulos integrados)</span></div>
+                <div class="dim-item"><span class="dim-val">70.2 cm</span><span class="dim-label">Alto total</span></div>
+                <div class="dim-item"><span class="dim-val">25 cm</span><span class="dim-label">Profundidad (Fondo)</span></div>
+                <div class="dim-item"><span class="dim-val">25 cm</span><span class="dim-label">Altura libre de las patas</span></div>
+                <div class="dim-item"><span class="dim-val">12 mm</span><span class="dim-label">Espesor del material (MDF)</span></div>
+            </div>
+
+            <h3>5.2. Modelado en software CAD</h3>
+            <p>El modelado completo se desarrolló en Autodesk Inventor 2026. Este software permitió modelar las uniones tipo caja y espiga con las tolerancias necesarias de ±0.5 mm en los encajes para asegurar que las piezas pudieran ensamblarse a presión sin fisurar el MDF de 12 mm, tal como se especifica en los planos de las piezas laterales y de elevación.</p>
+
+            <h3>5.3. Planos técnicos de cada pieza</h3>
+            <p>A continuación se presentan los planos donde se encuentran todas las piezas utilizadas para el mueble realizado.</p>
+
+            <p class="img-label"><strong>Layout 1 — Plano de las piezas sección izquierda — Parte I</strong></p>
+            <img src="image10.png" alt="Layout 1 - Plano sección izquierda Parte I" loading="lazy">
+
+            <p class="img-label"><strong>Layout 2 — Plano de las piezas sección izquierda — Parte II</strong></p>
+            <img src="image6.png" alt="Layout 2 - Plano sección izquierda Parte II" loading="lazy">
+
+            <p class="img-label"><strong>Layout 3 — Plano de las piezas sección izquierda — Parte III</strong></p>
+            <img src="image5.png" alt="Layout 3 - Plano sección izquierda Parte III" loading="lazy">
+
+            <p class="img-label"><strong>Layout 4 — Plano de las piezas sección derecha — Parte I</strong></p>
+            <img src="image2.png" alt="Layout 4 - Plano sección derecha Parte I" loading="lazy">
+
+            <p class="img-label"><strong>Layout 5 — Plano de las piezas sección derecha — Parte II</strong></p>
+            <img src="image14.png" alt="Layout 5 - Plano sección derecha Parte II" loading="lazy">
+
+            <h3>5.4. Plano de ensamblaje</h3>
+            <p>El montaje se realiza construyendo dos módulos independientes que posteriormente se integran para alcanzar los 80 cm de ancho total:</p>
+            <ul>
+                <li><strong>Módulo izquierdo (Tocador):</strong> Se arma la estructura base mediante juntas dentadas a presión mecanizadas por CNC y se instala la tapa superior abatible con bisagras.</li>
+                <li><strong>Módulo derecho (Cajonera):</strong> Se ensamblan las placas laterales, bases y divisiones internas para conformar los tres niveles de organización.</li>
+                <li><strong>Integración final:</strong> Se unen ambos módulos lateralmente y se concluye con la instalación de las cuatro patas estructurales y los herrajes complementarios (bisagras y jaladera frontal).</li>
+            </ul>
+
+            <p class="img-label"><strong>Layout 6 — Plano de ensamblaje</strong></p>
+            <img src="image11.png" alt="Layout 6 - Plano de ensamblaje" loading="lazy">
+
+            <p class="img-label"><strong>Layout 7 — Plano de conjunto</strong></p>
+            <img src="image1.png" alt="Layout 7 - Plano de conjunto" loading="lazy">
+
+            <h3>5.5. Sistema de uniones</h3>
+            <p>El sistema de uniones del Nórdic 12 combina dos tipos de conexión que trabajan en conjunto para garantizar resistencia estructural, facilidad de armado y un acabado estéticamente limpio, sin tornillos visibles en las caras exteriores del mueble.</p>
+
+            <h4>5.5.1. Uniones a presión mecanizadas</h4>
+            <p>Todas las piezas estructurales planas del mueble (placas laterales, traseras, divisiones internas y bases) incorporan ranuras y dientes generados directamente durante el proceso de ruteado CNC. Estas geometrías están diseñadas con tolerancias controladas (±0.5 mm) para encajar entre sí a presión, lo que permite un ensamblaje firme sin necesidad de tornillería interna.</p>
+
+            <h4>5.5.2. Herrajes complementarios</h4>
+            <p>Las funciones móviles del mueble (tapa del espejo, puerta interna y cajón) requieren herrajes metálicos que se instalan al final del ensamblaje. Se utilizaron tres tipos:</p>
+            <ul>
+                <li><strong>Bisagras metálicas tipo libro</strong> en la tapa abatible del compartimento del espejo, permitiendo que el usuario abra y cierre el tocador de forma segura.</li>
+                <li><strong>Bisagras metálicas adicionales</strong> en la puerta interna del módulo derecho, garantizando un giro controlado al abrir el compartimento.</li>
+                <li><strong>Jaladera metálica embutida</strong> en el cajón frontal del módulo izquierdo, que facilita la apertura y le da un toque estético contemporáneo al frente del mueble.</li>
+            </ul>
+
+            <div class="herrajes-grid">
+                <div class="herraje-item">
+                    <img src="image20.png" alt="Ángulo de zinc liviano" loading="lazy">
+                    <p class="img-label"><strong>Imagen 3 — Ángulo de zinc liviano</strong></p>
+                </div>
+                <div class="herraje-item">
+                    <img src="image21.png" alt="Bisagra rectangular tipo libro" loading="lazy">
+                    <p class="img-label"><strong>Imagen 4 — Bisagra rectangular tipo libro</strong></p>
+                </div>
+                <div class="herraje-item">
+                    <img src="image18.png" alt="Perilla ovalada pequeña" loading="lazy">
+                    <p class="img-label"><strong>Imagen 5 — Perilla ovalada pequeña</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PROCESO DE FABRICACIÓN -->
+        <section id="fabricacion" class="content-section alt-bg">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2>Proceso de Fabricación</h2>
+            </div>
+
+            <p>La fabricación del Nórdic 12 se desarrolló íntegramente en el Fablab de la Universidad ESAN, integrando el flujo digital con las operaciones manuales de acondicionamiento (lijado, ensamblaje e instalación de herrajes). A continuación se documenta el proceso completo, desde el corte de las piezas hasta el mueble terminado.</p>
+
+            <h3>6.1. Corte</h3>
+            <p>El corte se ejecutó en tres pasadas progresivas de 4 mm cada una, hasta completar el espesor total del tablero (12 mm), utilizando los parámetros descritos en el punto 4.2 del presente informe.</p>
+
+            <p class="img-label"><strong>Imagen 6 — Corte de las piezas</strong></p>
+            <img src="image19.png" alt="Corte de las piezas" loading="lazy">
+
+            <h3>6.2. Desmontaje y desbarbado</h3>
+            <p>Una vez finalizado el fresado, las piezas se separaron del tablero, se removieron las rebabas con una lima fina y se lijaron los bordes para preparar las superficies de contacto para el ensamble a presión.</p>
+
+            <div class="two-col-imgs">
+                <div>
+                    <img src="image22.png" alt="Desmontaje de las piezas" loading="lazy">
+                    <p class="img-label"><strong>Imagen 7 — Desmontaje de las piezas</strong></p>
+                </div>
+                <div>
+                    <img src="image13.png" alt="Lijado de las piezas" loading="lazy">
+                    <p class="img-label"><strong>Imagen 8 — Lijado de las piezas</strong></p>
+                </div>
+            </div>
+
+            <h3>6.3. Proceso de ensamblaje</h3>
+
+            <h4>6.3.1. Armado de los módulos</h4>
+            <p>El armado de la estructura consistió en la conformación paralela de sus dos secciones. Por un lado, el módulo izquierdo (tocador) se estructuró uniendo las placas laterales a la trasera mediante juntas a presión mecanizadas en CNC, integrando posteriormente las divisiones internas, la placa inferior general y las piezas de elevación trasera para cerrar el cuerpo. De manera simultánea, el módulo derecho (cajón organizador) se conformó ensamblando sus laterales con la placa base, trasera, superior, bases de niveles intermedios y divisiones internas.</p>
+
+            <p class="img-label"><strong>Imagen 9 — Armado de los módulos</strong></p>
+            <img src="image23.png" alt="Armado de los módulos" loading="lazy">
+
+            <h4>6.3.2. Armado del compartimento del espejo</h4>
+            <p>Se ensamblaron las placas sobre el módulo izquierdo, formando la tapa abatible del tocador. Se montó el espejo plegable y se aseguró con las bisagras metálicas correspondientes.</p>
+
+            <p class="img-label"><strong>Imagen 10 — Armado del compartimiento del espejo</strong></p>
+            <img src="image15.png" alt="Armado del compartimiento del espejo" loading="lazy">
+
+            <h4>6.3.3. Instalación de las patas</h4>
+            <p>Se atornillaron las cuatro patas estructurales en las bases de cada uno de los dos módulos.</p>
+
+            <div class="two-col-imgs">
+                <div>
+                    <img src="image16.png" alt="Instalación de las patas - parte 1" loading="lazy">
+                    <p class="img-label"><strong>Imagen 11 — Instalación de las patas (I)</strong></p>
+                </div>
+                <div>
+                    <img src="image17.png" alt="Instalación de las patas - parte 2" loading="lazy">
+                    <p class="img-label"><strong>Imagen 12 — Instalación de las patas (II)</strong></p>
+                </div>
+            </div>
+
+            <h4>6.3.4. Unión de ambos módulos</h4>
+            <p>Una vez armados los dos cuerpos por separado, se unieron lateralmente para formar el mueble completo de 80 cm de ancho, alineando las bases superiores e inferiores.</p>
+
+            <p class="img-label"><strong>Imagen 13 — Unión de ambos módulos</strong></p>
+            <img src="image12.png" alt="Unión de ambos módulos" loading="lazy">
+
+            <h3>6.4. Mueble final ensamblado en 3D y real</h3>
+            <p>El Nórdic 12 se concibió como un velador multifuncional de diseño minimalista fabricado íntegramente en MDF de 12 mm, orientado a optimizar el espacio en dormitorios modernos. El producto final integra en un solo cuerpo de 80 × 25 × 70.2 cm tres funcionalidades principales: mesa de noche con superficie de apoyo, tocador con espejo plegable y compartimento de almacenamiento, y organizador con cajón frontal, repisas abiertas y puerta interna. El uso del ruteado CNC permitió obtener un encaje milimétrico entre todas las piezas, mientras que los herrajes complementarios (bisagras y jaladera) aportan la movilidad necesaria a las partes abatibles.</p>
+
+            <p class="img-label"><strong>Imagen 14 — Mueble final desplegado en 3D</strong></p>
+            <img src="image8.png" alt="Mueble final 3D" loading="lazy">
+
+            <p class="img-label"><strong>Imagen 15 — Mueble final ensamblado</strong></p>
+            <img src="image9.png" alt="Mueble final ensamblado" loading="lazy" class="img-final">
+        </section>
+
+        <!-- 7. RECOMENDACIONES -->
+        <section id="recomendaciones" class="content-section">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2>Recomendaciones</h2>
+            </div>
+
+            <div class="rec-list">
+                <div class="rec-item">
+                    <span class="rec-num">01</span>
+                    <div>
+                        <h4>Optimización del material (Nesting)</h4>
+                        <p>Para futuras fabricaciones, se sugiere realizar un estudio más profundo en la distribución de las piezas (nesting) dentro del software CAM para reducir aún más el porcentaje de desperdicio del tablero de MDF.</p>
+                    </div>
+                </div>
+                <div class="rec-item">
+                    <span class="rec-num">02</span>
+                    <div>
+                        <h4>Acabados y durabilidad</h4>
+                        <p>Aunque el prototipo actual valida la funcionalidad, se recomienda aplicar recubrimientos protectores (como sellador, pintura poliuretano o laminado) para proteger el MDF de 12 mm contra la humedad y el desgaste por el uso diario.</p>
+                    </div>
+                </div>
+                <div class="rec-item">
+                    <span class="rec-num">03</span>
+                    <div>
+                        <h4>Escalabilidad y producción</h4>
+                        <p>Evaluar la tercerización (outsourcing) del servicio de ruteado CNC para reducir costos fijos de maquinaria, además de aplicar estrategias de simplificación de la cadena de suministro al negociar compras de MDF por volumen directamente con fabricantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CONCLUSIONES -->
+        <section id="conclusiones" class="content-section alt-bg">
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2>Conclusiones</h2>
+            </div>
+
+            <div class="conclusion-list">
+                <div class="conclusion-item">
+                    <h4>Precisión y viabilidad</h4>
+                    <p>El uso conjunto del modelado CAD y la tecnología de ruteado CNC demostró ser altamente efectivo, permitiendo fabricar el velador Nórdic 12 con gran exactitud dimensional y un excelente nivel de repetibilidad.</p>
+                </div>
+                <div class="conclusion-item">
+                    <h4>Eficiencia en el ensamblaje</h4>
+                    <p>El diseño de uniones mecanizadas a presión redujo la necesidad de herrajes complejos, facilitando un montaje rápido y garantizando la estabilidad estructural del mueble.</p>
+                </div>
+                <div class="conclusion-item">
+                    <h4>Cumplimiento del propósito</h4>
+                    <p>Se logró desarrollar con éxito un mobiliario multifuncional que integra almacenamiento, repisas y un tocador oculto, validando que el diseño paramétrico es una solución ideal y moderna para optimizar el espacio en dormitorios pequeños.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="logo_esan.png" alt="ESAN" class="footer-logo">
+                <h2>NÓRDIC 12</h2>
+                <p>Velador multifuncional de diseño minimalista fabricado íntegramente en MDF de 12 mm mediante ruteado CNC en el Fablab ESAN.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Tecnología</h3>
+                <ul>
+                    <li>Ruteado CNC (ShopBot)</li>
+                    <li>Modelado CAD (Autodesk Inventor)</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Integrantes</h3>
+                <ul>
+                    <li>Chambergo Saavedra, Alanis Chris</li>
+                    <li>Cubas Guevara, Aaron Aldeir</li>
+                    <li>Rodriguez Bejarano, Liam Denis</li>
+                    <li>Rodriguez Castañeda, Jahaira</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Proyecto</h3>
+                <ul>
+                    <li>Universidad ESAN</li>
+                    <li>Procesos de Fabricación</li>
+                    <li>2026 - I</li>
+                    <li>Docente: Ciro Mejía</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 NÓRDIC 12 — Velador Mesa de Noche | Universidad ESAN | Procesos de Fabricación</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('open');
+            });
+        });
+
+        // Header transparency on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
